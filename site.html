@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nota Alunos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="alunos">
+    <label for="nomeAlunos">Digite o nome dos Alunos separado por ponto e virgula ";"</label>
+    <label for="exemplo" id="exemplo">exemplo: <strong>abraão araujo;matheus pinheiro;marcos magalhaes;</strong></label>
+    <input type="text" id="nomeAlunos">
+    <label for="notaAv1Aluno">AV1</label>
+    <input type="text" id="notaAv1Aluno">
+    <label for="notaAv2Aluno">AV2</label>
+    <input type="text" id="notaAv2Aluno">
+    <button id="enviarDados">Enviar</button>
+  </div>
+
+  <table id="tabela" class="tabela">
+    <th>Aluno</th>
+    <th>AV1</th>
+    <th>AV2</th>
+    <th>Média</th>
+  </table>
+
+</body>
+<script src="alunos.js"></script>
+
+</html>
