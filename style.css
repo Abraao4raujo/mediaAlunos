@@ -1,0 +1,54 @@
+#tabela {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tabela th, #tabela td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+#tabela th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#exemplo {
+  font-style: italic;
+}
+.alunos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: auto;
+  width: 80%;
+}
+
+.alunos label {
+  margin: 5px;
+}
+
+.alunos input {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.alunos button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: none;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.alunos button:hover {
+  background-color: #459648;
+}
