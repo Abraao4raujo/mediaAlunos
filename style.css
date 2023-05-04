@@ -1,9 +1,14 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 #tabela {
   border-collapse: collapse;
   width: 100%;
 }
 
-#tabela th, #tabela td {
+#tabela th,
+#tabela td {
   border: 1px solid black;
   padding: 8px;
   text-align: center;
@@ -17,6 +22,7 @@
 #exemplo {
   font-style: italic;
 }
+
 .alunos {
   display: flex;
   flex-direction: column;
@@ -51,4 +57,12 @@
 
 .alunos button:hover {
   background-color: #459648;
+}
+
+.aprovado {
+  color: rgb(32, 32, 32)
+}
+
+.reprovado {
+  color: #ff3b1f;
 }
