@@ -1,27 +1,27 @@
 class Alunos {
-  constructor(nomeAluno, av1, av2){
+  constructor(nomeAluno, av1, av2) {
     this.nomeAluno = nomeAluno
     this.av1 = parseFloat(av1) || 0
     this.av2 = parseFloat(av2) || 0
-    this.media = ((this.av1 + this.av2) /2).toFixed(2)
+    this.media = ((this.av1 + this.av2) / 2).toFixed(2)
     this.status = this.status(this.media)
   }
   apresentarMedia() {
     console.log(`${this.nomeAluno} ${this.av1}+${this.av2} = ${this.media}`)
   }
   status(media) {
-    if(media >= 7){
+    if (media >= 7) {
       this.status = "APROVADO"
       return this.status
-    }else{
+    } else {
       this.status = "REPROVADO"
       return this.status
     }
   }
 }
 
-function notaAluno(dados){
-  const {nome, av1, av2} = dados
+function notaAluno(dados) {
+  const { nome, av1, av2 } = dados
   return new Alunos(nome, av1, av2)
 }
 
@@ -53,7 +53,7 @@ function createTableRow(nomeAluno, av1, av2, media, status) {
   var col3 = document.createElement('td')
   var col4 = document.createElement('td')
   var col5 = document.createElement('td')
-  
+
   tabela.appendChild(linha)
 
   col1.textContent = nomeAluno
@@ -61,9 +61,9 @@ function createTableRow(nomeAluno, av1, av2, media, status) {
   col3.textContent = av2
   col4.textContent = media
   col5.innerHTML = `<strong>${status}</strong>`
-  if(col5.textContent == 'APROVADO'){
+  if (col5.textContent == 'APROVADO') {
     col5.classList.add('aprovado')
-  }else{
+  } else {
     col5.classList.add('reprovado')
   }
 
@@ -87,4 +87,4 @@ function addAlunosToTable() {
 }
 
 
-enviarDadosButton .addEventListener('click', addAlunosToTable)
+enviarDadosButton.addEventListener('click', addAlunosToTable)
